@@ -9,6 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
+                sh 'sudo docker -v'
             }
         }
         stage('Deploy') {
